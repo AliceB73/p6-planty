@@ -1,0 +1,846 @@
+/*
+ Theme Name:   Plantwenty
+ Description:  Thème Planty basé sur le thème Twenty Twenty
+ Author:       --
+ Template:     twentytwenty
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         site vitrine, boissons, plantes
+ Text Domain:  planty-oc
+*/
+
+
+/* BODY */
+
+body {
+    background-color: #ECE2DA;
+    font-family: inherit;
+}
+
+body .is-layout-flex > * {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* HEADER */
+
+.logo-planty {
+    height: 20px;
+    width: auto;
+    margin: 30px 0 30px 40px;
+}
+
+.header {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    height: 80px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin: 20px 0;
+    list-style: none;
+    font-family: 'Syne', sans-serif;
+}
+
+.navigation a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#menu #adminId {
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#menu #adminId:hover {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#menu li {
+    list-style: none;
+    
+}
+
+#menu-item-22 a {
+    background-color: #DC9F96;
+    border: #DC9F96 solid 1px;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 30px;
+}
+
+#menu-item-22 a:hover {
+    background-color: #C02E44;
+}
+
+.navigation #menu-item-20 a:hover {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.nav-menu-responsive {
+    display: none;
+}
+
+@media (min-width: 656px) and (max-width: 765px) {
+    .navigation {
+        gap: 5px;
+        }
+    }
+
+@media (min-width: 508px) and (max-width: 656px) {
+    .header nav {
+        width: 100%;
+        background-color: #ffffff;
+        padding-bottom: 8px;
+        }
+    .navigation {
+        width: 100%;
+        }
+    .header {
+        justify-content: center;
+        }   
+    }
+
+@media (min-width: 320px) and (max-width: 508px) {
+    .navigation, .header nav {
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        }
+    .header nav {
+        padding-bottom: 8px;
+    }
+    .entry-content {
+        margin-top: 290px;
+        }
+    .header {
+        justify-content: center;
+    }
+     }
+
+/* FOOTER */
+
+#mentions-legales {
+    background-color: #ffffff;
+
+    display: flex;
+    justify-content: center;
+}
+
+#mentions-legales a {
+    color: #000000;
+    text-decoration: none;
+    margin: 20px 0 20px 0;
+    font-size: 16px;
+    font-family: 'Syne', sans-serif;
+}
+
+/* IMAGE FOOTER */
+
+@media (min-width: 320px) and (max-width: 2000px) {
+.entry-content > .alignwide:not(.wp-block-group.has-background), .entry-content > .alignfull:not(.wp-block-group.has-background) {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 2000px) {
+.wp-block-cover-image .wp-block-cover__inner-container, .wp-block-cover .wp-block-cover__inner-container {
+    width: 100%;
+    }
+}
+
+.wp-block-cover, .wp-block-cover-image {
+    padding: 0;
+}
+
+.wp-image-44 {
+    margin-top: 120px;
+}
+
+.wp-block-cover .wp-block-cover__inner-container {
+    padding-bottom: 0;
+}
+
+#post-15 .wp-image-44 {
+    margin-top: 73px;
+}
+
+/* MAIN */
+
+#site-content h1, #site-content h2, #site-content h3, #site-content h4, #site-content p{
+    font-family: 'Syne', sans-serif;
+}
+
+#site-content h1 {
+    max-width: 781px;
+}
+
+#site-content .entry-content .titre-accueil {
+    font-size: 38px;
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+
+@media (min-width: 320px) and (max-width: 520px) {
+    #site-content .entry-content .titre-accueil {
+        font-size: 22px; 
+    }
+}
+
+.canette-planty {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: 10px!important;
+}
+
+.curved-section {
+    background-color: #ffffff;
+    background-image: url(http://localhost/planty/wp-content/uploads/2023/06/sepration-block.png);
+    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    height: 415px;
+    padding-top: 120px;
+}
+
+@media (min-width: 320px) and (max-width: 417px) {
+    .curved-section {
+        height: 450px; 
+    }
+}
+
+#site-content .curved-section h2 {
+    font-weight: 700;
+    margin-bottom: 45px;
+    margin-top: 13px!important;
+}
+
+#site-content .p-energie-des-plantes {
+    line-height: 24px!important;
+}
+
+/* SECTION GOÛTS */
+
+#site-content h2 {
+    font-weight: 800;
+    font-size: 30px;
+}
+
+#site-content .titre-gouts {
+    margin-bottom: 7px;
+}
+
+.p-gouts {
+    margin-bottom: 48px!important;
+}
+
+.section-gouts .column-gout .img-gout {
+    height: 262px;
+    width: 393px;
+    margin: 0!important;
+}
+
+.column-gout {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section-gouts {
+	max-width: 816px!important;
+    gap: 30px;
+    margin-bottom: 47px!important;
+}
+
+.section-gouts .column-gout .framboise {
+    max-width: 240px!important;
+}
+
+.section-gouts .column-gout .txt-gout {
+    margin: 0!important;
+}
+
+@media (min-width: 320px) and (max-width: 860px) {
+    #post-25 > div.post-inner > div > div.wp-block-columns.section-gouts.is-layout-flex.wp-container-3 {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 860px) {
+    .column-gout {
+        margin: 0 auto 0 auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+    .section-gouts .column-gout .img-gout {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 350px) {
+    .section-gouts .column-gout .txt-gout {
+        font-size: 38px!important;
+    }
+    .section-gouts .column-gout .framboise {
+        width: 200px!important;
+        font-size: 38px!important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 895px) {
+    .section-gouts {
+        display: flex;
+        flex-direction: column;
+        }
+    }
+
+/* CALL TO ACTION */
+
+.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link {
+    text-transform: none;
+    font-size: 15px;
+    height: 55px;
+    width: 198px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 400;
+}
+
+.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link:hover {
+    background-color: #C02E44!important;
+    text-decoration: none;
+}
+
+.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link:focus {
+    text-decoration: none;
+}
+
+.section-gouts .wp-block-cover .wp-block-cover__inner-container {
+    width: 350px;
+    padding: 0!important;
+}
+
+/* TESTIMONIAUX */
+
+#site-content .last-section {
+    margin-top: 120px;
+}
+
+.nom-testimoniaux {
+    margin-bottom: 11px!important;
+    margin-top: 20%!important;
+}
+
+.txt-testimoniaux {
+    line-height: 19px!important;
+}
+
+@media (min-width: 780px) and (max-width: 1034px) {
+     .testimonial-block {
+        display: flex;
+        flex-direction: column;
+    }
+    .photo-testimoniaux {
+        margin-bottom: 0px!important;
+    }
+    .nom-testimoniaux {
+        margin-top: 0px!important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 780px) {
+    .txt-testimoniaux br {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 370px) {
+    .testimonial-block {
+       display: flex;
+       flex-direction: column;
+       align-content:baseline;
+   }
+   .photo-testimoniaux {
+       margin-bottom: 0px!important;
+   }
+   .nom-testimoniaux {
+       margin-top: 0px!important;
+       margin-left: 0px!important;
+   }
+}
+
+/* NOUS RENCONTRER */
+
+
+#site-content .section-nous-rencontrer .titre-nous-rencontrer {
+    font-size: 38px;
+    margin-bottom: 18px;
+}
+
+@media (min-width: 320px) and (max-width: 510px) {
+    #site-content .section-nous-rencontrer .titre-nous-rencontrer {
+        font-size: 22px; 
+    }
+}
+
+.entry-content > *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+    max-width: 100%;
+    width: calc(100% - 4rem);
+}
+
+.entry-content .wp-block-group .p-nous-rencontrer {
+    max-width: 670px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+.entry-content .section-nous-rencontrer {
+    margin-bottom: 0!important;
+}
+
+.wp-container-2 {
+    background-image: url("http://localhost/planty/wp-content/uploads/2023/06/Group-2.png");
+    background-position: 5% 5%;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 656px) and (max-width: 800px) {
+    .titre-nous-rencontrer {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 508px) and (max-width: 656px) {
+    .wp-container-2 {
+        background-position-y: 15%; 
+    }
+}
+
+@media (min-width: 508px) and (max-width: 656px) {
+    .titre-nous-rencontrer {
+        margin-top: 120px!important;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 508px) {
+    .titre-nous-rencontrer {
+        margin-top: 0px!important;
+    }
+    .wp-container-2 {
+        background: none;
+    }
+}
+
+.wp-image-93 {
+    object-fit: fill!important;
+}
+
+.wp-block-cover__inner-container .wp-container-8 .wp-container-7 {
+    background-image: url("http://localhost/planty/wp-content/uploads/2023/06/Group-4.png");
+    background-position: 95% 100%;
+    background-repeat: no-repeat;
+    min-height: 385px;
+    gap: 155px;
+    justify-content: center;
+}
+
+.presentation-equipe .is-layout-flow {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (min-width: 320px) and (max-width: 560px) {
+    .wp-block-cover__inner-container .wp-container-8 .wp-container-7 {
+        background-image: none;
+    }
+}
+
+#submit-btn, #submit-commande {
+    cursor: pointer;
+}
+
+#submit-btn:focus {
+    text-decoration: none;
+}
+
+#submit-commande:hover, #submit-btn:hover {
+    background-color: #C02E44;
+    text-decoration: none;
+}
+
+#site-content .titre-l-equipe {
+    margin-top: 120px;
+    margin-bottom: 0;
+}
+
+#site-content .section-l-equipe h2 {
+    font-weight: 700;
+}
+
+.section-l-equipe .prenom-equipe {
+    margin-top: -19px!important;
+    margin-bottom: 6px!important;
+}
+
+.wp-container-6.wp-container-6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 815px;
+    z-index: 5;
+}
+
+.wp-container-7.wp-container-7 {
+    background-color: #ffffff;
+}
+
+.wp-image-93 {
+    height: 554px!important;
+}
+
+.p-nous-rencontrer {
+    margin: -100px;
+}
+
+/* FORMULAIRE DE CONTACT */
+
+.wpcf7-form label {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Syne', sans-serif;
+    margin-bottom: 13px;
+    margin-top: 22px;
+}
+
+#nom, #email, #message, .order-form input {
+    border-radius: 7px;
+    width: 383px;
+    height: 70px;
+}
+
+#message {
+    resize: none;
+    height: 237px;
+}
+
+#submit-btn, #submit-commande {
+    background-color: #E0B9B4;
+    text-transform: none;
+    font-size: 15px;
+    font-weight: 400;
+    width: 198px;
+    height: 55px;
+    border-radius: 7px;
+    margin-top: 24px;
+}
+
+#submit-btn {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#wpcf7-f100-p15-o1 {
+    z-index: -5;
+    background-image: url("http://localhost/planty/wp-content/uploads/2023/06/Group-16.png");
+    background-position: left -5px top 460px; /*0% 97%*/
+    background-repeat: no-repeat;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+    #wpcf7-f100-p15-o1 {
+        background-image: none; 
+    }
+}
+
+.wpcf7-form, .wpcf7-form .failed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+
+.wpcf7-form br {
+    display: none;
+}
+
+.wpcf7 form.failed .wpcf7-response-output {
+	position: relative;
+	font-size: 18px;
+	padding: 5px;
+	border: none;
+	color: #dc3232;
+	font-weight: 600;
+	margin-left: auto;
+	margin-right: auto;
+    background-color: #ECE2DA;
+    border-radius: 5px;
+}
+
+/* PAGE PRECOMMANDE */
+
+.page-id-17 {
+    background-color: #3B8E46;
+}
+
+.page-id-17 h2 {
+    color:#ffffff;
+}
+
+.post-inner {
+    padding-top: 0!important;
+}
+
+.titre-page-commande {
+    margin-top: 69px!important;
+    margin-bottom: 69px!important;
+}
+
+.order-form {
+    display: flex;
+    flex-direction: row;
+    gap: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width: 320px) and (max-width: 405px) {
+    #site-content .post-inner .entry-content .titre-page-commande {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 700px) {
+    .choix-gout #titre-commande {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 460px) {
+    .choix-gout #titre-commande {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 900px) {
+    .order-form {
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+    #divider {
+        display: none;
+    }
+    .left-column, .right-column {
+        width: 100%!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center!important;
+    }
+    .contenant-gouts {
+        flex-wrap: wrap; 
+    }
+    .choix-gout #titre-commande {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.left-column, .right-column {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+#titre-livraison, #titre-informations {
+    margin: 53px 0 0 0!important;
+}
+
+#divider {
+    border-left: 1px solid #ffffff;
+    width: 0px;
+    margin-top: 55px;
+}
+
+.order-form h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.order-form label {
+    color:#ffffff;
+    margin-top: 30px;
+}
+
+.order-form input {
+    border-radius: 7px;
+    height: 70px;
+}
+
+#submit-commande {
+    margin: 44px auto 0px auto;
+}
+
+.choix-gout {
+    border-top: 1px solid #ffffff;
+    padding-top: 40px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 40px;
+    margin: 0 auto 0 auto;
+    max-width: 860px;
+}
+
+/* FORMULAIRE DE COMMANDE */
+
+#site-content .titre-page-commande {
+    font-size: 38px;
+}
+
+#site-content #titre-commande {
+    font-weight: 700;
+}
+
+#wpcf7-f130-p17-o1 {
+    margin-bottom: 93px;
+}
+
+#titre-commande {
+    margin-top: 0;
+}
+
+.contenant-gouts {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+.article-fruit {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-zone {
+    display: flex;
+    flex-direction: row;
+    gap: 11px;
+}
+
+.number-zone {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-zone {
+    display: flex;
+    flex-direction: column;
+    width: 31px;
+}
+
+#fraise, #framboise, #pamplemousse, #citron {
+    width: 50px;
+    text-align: center;
+}
+
+.form-zone .ok-btn {
+    width: 100px;
+    height: 56px;
+    background-color: #E0B9B4;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-weight: 400;
+    font-family: 'Syne', sans-serif;
+}
+
+.form-zone .ok-btn:hover {
+    background-color: #C02E44;
+    text-decoration: none;
+}
+
+.number-zone input {
+    border: none;
+    border-radius: 5px 0 0 5px;
+    height: 56px;
+    font-size: 16px;
+}
+
+.button-zone .plus-btn, .button-zone .moins-btn {
+    background-color: #DC9F96;
+    color: #ffffff;
+    height: 50%;
+    padding: 0;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Syne', sans-serif;
+    cursor: pointer;
+}
+
+.form-zone .ok-btn, .form-zone .plus-btn, .form-zone .moins-btn {
+    border: none;
+}
+
+.button-zone .plus-btn{
+    border-radius: 0 5px 0 0;
+    border-bottom: solid 1px #ffffff;
+}
+
+.button-zone .moins-btn {
+    border-radius: 0 0 5px 0;
+}
+
+.button-zone .moins-btn:hover, .button-zone .plus-btn:hover {
+    text-decoration: none;
+}
+
+.button-zone .moins-btn:focus, .button-zone .plus-btn:focus, .form-zone .ok-btn:focus {
+    text-decoration: none;
+}
+
+#submit-commande:focus {
+    text-decoration: none;
+}
